@@ -1,3 +1,5 @@
+#!/bin/bash
+
 dir="/project/mang/data/ADNI_test"
 
 for d1 in "$dir"/*; do
