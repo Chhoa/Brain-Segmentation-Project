@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SDIR=/project/mang/chhoa/results/adni-results-f
-DDIR=/project/mang/chhoa/results/adni_vtest
+SDIR=/project/mang/chhoa/results/adni-results-018_S_0335
+DDIR=/project/mang/chhoa/results/adni_vtest-018_S_0335
 
 for folder in "$SDIR"/*
 do
@@ -14,7 +14,7 @@ do
     for file in "$folder2"/*-orig_MALPEM.nii.gz
     do
       filename=$(basename "$file" .nii.gz)
-      matlab -nodisplay -batch "addpath('/project/mang/chhoa/MLtoolbox/NIfTI_20140122'); segmentExtractRLV_CCA('$file', '${DDIR}/${folder_name}/${folder2_name}'); exit"
+      matlab -nodisplay -batch "addpath('/project/mang/chhoa/MLtoolbox/NIfTI_20140122'); segmentExtractRLV_CCA_mod('$file', '${DDIR}/${folder_name}/${folder2_name}'); exit"
     done
   done
 done
