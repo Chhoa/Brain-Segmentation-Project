@@ -1,7 +1,7 @@
 #!/bin/bash
 ### directory of code
 CDIR=/project/mang/chhoa/code/malpem
-DDIR=/project/mang/data/ADNI_test
+DDIR=/project/mang/data/ADNI_batches/batch_1
 
 ### loop over each subfolder
 for subfolder in ${DDIR}/*
@@ -15,7 +15,7 @@ do
     sbatch <<EOF
 #!/bin/bash
 #SBATCH -J malpem
-#SBATCH -N 1 -n 40
+#SBATCH -N 40 -n 40
 #SBATCH --mem=128GB
 #SBATCH --output=/project/mang/chhoa/scripts/log/run-.%x.%j.out
 #SBATCH --error=/project/mang/chhoa/scripts/log/run-.%x.%j.err

@@ -13,8 +13,8 @@ for i = 1:numel(nii_RV.img)
     end
 end
 
-binary_filename_RV = fullfile(output_dir, ['binary_RV_' name ext]);
-save_untouch_nii(nii_RV, binary_filename_RV);
+%binary_filename_RV = fullfile(output_dir, ['binary_RV_' name ext]);
+%save_untouch_nii(nii_RV, binary_filename_RV);
 
 % create binary image for label 24
 nii_LV = nii;
@@ -26,13 +26,13 @@ for i = 1:numel(nii_LV.img)
     end
 end
 
-binary_filename_LV = fullfile(output_dir, ['binary_LV_' name ext]);
-save_untouch_nii(nii_LV, binary_filename_LV);
+%binary_filename_LV = fullfile(output_dir, ['binary_LV_' name ext]);
+%save_untouch_nii(nii_LV, binary_filename_LV);
 
 % connected component analysis
 
 % right ventricle
-CC = bwconncomp(nii_RV.img, 18);
+CC = bwconncomp(nii_RV.img, 6);
 num_pixels = cellfun(@numel, CC.PixelIdxList);
 [~,idx] = max(num_pixels);
 for i = 1:CC.NumObjects
@@ -40,12 +40,12 @@ for i = 1:CC.NumObjects
         nii_RV.img(CC.PixelIdxList{i}) = 0;
     end
 end
-largest_component_filename_RV = fullfile(output_dir, ['cca_RV_' name ext]);
+largest_component_filename_RV = fullfile(output_dir, ['RV_' name ext]);
 save_untouch_nii(nii_RV, largest_component_filename_RV);
 
 
 % left ventricle
-CC = bwconncomp(nii_LV.img, 18);
+CC = bwconncomp(nii_LV.img, 6);
 num_pixels = cellfun(@numel, CC.PixelIdxList);
 [~,idx] = max(num_pixels);
 for i = 1:CC.NumObjects
@@ -53,7 +53,7 @@ for i = 1:CC.NumObjects
         nii_LV.img(CC.PixelIdxList{i}) = 0;
     end
 end
-largest_component_filename_LV = fullfile(output_dir, ['cca_LV_' name ext]);
+largest_component_filename_LV = fullfile(output_dir, ['LV_' name ext]);
 save_untouch_nii(nii_LV, largest_component_filename_LV);
 
 end

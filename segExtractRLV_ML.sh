@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SDIR=/project/mang/chhoa/results/adni-results-018_S_0335
-DDIR=/project/mang/chhoa/results/adni_vtest-018_S_0335
+SDIR=/project/mang/chhoa/results/adni-results-f
+DDIR=/project/mang/chhoa/results/adni-ventricles-CCA_new
 
 for folder in "$SDIR"/*
 do

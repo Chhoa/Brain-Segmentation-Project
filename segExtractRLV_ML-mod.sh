@@ -1,11 +1,11 @@
 #!/bin/bash
 
-dir="/project/mang/data/ADNI_test2"
+dir="/project/mang/data/ADNI_test_new"
 
 for d1 in "$dir"/*; do
   ##for d2 in "$d1"/*Seg_MALPEM; do
       for file in "$d1"/*_MALPEM.nii.gz; do
       filename=$(basename "$file" .nii.gz)
-      matlab -nodisplay -batch "addpath('/project/mang/chhoa/MLtoolbox/NIfTI_20140122'); segmentExtractRLV_CCA('$file', '$d1'); exit"
+      matlab -nodisplay -batch "addpath('/project/mang/chhoa/MLtoolbox/NIfTI_20140122'); segmentExtractRLV_CCA_mod('$file', '$d1'); exit"
     done
 done

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ### directory of code
-SDIR=/project/mang/chhoa/results/adni-results
-DDIR=/project/mang/chhoa/results/adni-rest_confined
+SDIR=/project/mang/data/ADNI_test
+DDIR=/project/mang/data/ADNI_test_new
 
 ### loop over each folder
 for folder in "$SDIR"/*
