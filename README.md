@@ -84,7 +84,7 @@ Creating soft links to original nifty files --> symlink_orig.sh
 
 **Step 3 ^.^**
 
-Running Malpem software for segmentations --> run-malpem-all-mod.sh
+Running [Malpem](https://github.com/ledigchr/MALPEM) software for segmentations --> run-malpem-all-mod.sh
 
 -runs malpem code existing in directory 'CDIR'
 
