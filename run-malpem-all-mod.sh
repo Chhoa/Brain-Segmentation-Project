@@ -15,11 +15,11 @@ do
     sbatch <<EOF
 #!/bin/bash
 #SBATCH -J malpem
-#SBATCH -N 20 -n 40
+#SBATCH -N 1 -n 40
 #SBATCH --mem=128GB
 #SBATCH --output=/project/mang/chhoa/scripts/log/run-.%x.%j.out
 #SBATCH --error=/project/mang/chhoa/scripts/log/run-.%x.%j.err
-#SBATCH -t 12:00:00
+#SBATCH -t 01:00:00
 #SBATCH --mail-user=jchhoa@uh.edu
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=end
