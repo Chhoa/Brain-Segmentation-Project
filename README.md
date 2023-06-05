@@ -1,6 +1,6 @@
-# Brain-Segmentation-Scripts
+# Brain-Segmentation-Project
 
-These scripts are linked to /project/mang/chhoa/scripts on UH Sabine cluster.
+This repo is linked to /project/mang/chhoa/scripts on UH Sabine cluster.
 
 Purpose: Segmenting brain structures and cleaning them (data preprocessing)
 
