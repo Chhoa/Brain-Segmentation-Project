@@ -9,7 +9,7 @@ Steps and short descriptions to using the scripts are as follows:
 
 **Step 1 ^.^**
 
-Creating batches --> batch_mod.sh
+Creating batches --> [batch_mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/batch_mod.sh)
 
 -copies directories from 'sdir' in batches and creates batch directories inside 'tdir' to put them in
 
@@ -72,7 +72,7 @@ ddir/
 
 **Step 2 ^.^**
 
-Creating soft links to original nifty files --> symlink_orig.sh
+Creating soft links to original nifty files --> [symlink_orig.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/symlink_orig.sh)
 
 -creates soft link to the original nifty file that are in four step depth of the main directory 'dir'
 
@@ -84,7 +84,7 @@ Creating soft links to original nifty files --> symlink_orig.sh
 
 **Step 3 ^.^**
 
-Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations --> run-malpem-all-mod.sh
+Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations --> [run-malpem-all-mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/run-malpem-all-mod.sh)
 
 -runs malpem code existing in directory 'CDIR'
 
@@ -96,7 +96,7 @@ Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations 
 
 **Step 4 ^.^**
 
-Creating soft links to MALPEM segmentations --> symlink_seg.sh
+Creating soft links to MALPEM segmentations --> [symlink_seg.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/symlink_seg.sh)
 
 -creates soft link to the nifty files that has names ending with '_MALPEM.nii.gz' (malpem segmentations) that are in the subdirectories of the 'Seg_MALPEM' folder of the corresponding subdirectories of the main directory 'dir'
 
