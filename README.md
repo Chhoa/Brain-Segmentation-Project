@@ -15,7 +15,7 @@ Creating batches --> [batch_mod.sh](https://github.com/Chhoa/Brain-Segmentation-
 
 -also leaves the old copied directories in 'tdir' untouched when ran again
 
-```bash
+```
 sdir/
 
 |--dir1/
@@ -31,7 +31,7 @@ sdir/
 .
 ```
 
-```bash
+```
 
 ddir/
 
