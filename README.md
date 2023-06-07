@@ -11,9 +11,9 @@ Steps and short descriptions to using the scripts are as follows:
 
 Creating batches --> [batch_mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/batch_mod.sh)
 
-- copies directories from _'sdir'_ in batches and creates batch directories inside _'tdir'_ to put them in
+- copies directories from _sdir_ in batches and creates batch directories inside _tdir_ to put them in
 
-- also leaves the old copied directories in '_tdir_' untouched when ran again
+- also leaves the old copied directories in _tdir_ untouched when ran again
 
 ```
 sdir/
@@ -68,7 +68,7 @@ ddir/
 
 Creating soft links to original nifty files --> [symlink_orig.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/symlink_orig.sh)
 
-- creates soft link to the original nifty file that are in four step depth of the main directory _'dir'_
+- creates soft link to the original nifty file that are in four step depth of the main directory _dir_
 
 - the links are created in the first depth of each corresponding subdirectory
 
@@ -80,19 +80,19 @@ Creating soft links to original nifty files --> [symlink_orig.sh](https://github
 
 Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations --> [run-malpem-all-mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/run-malpem-all-mod.sh)
 
-- runs malpem code existing in directory _'CDIR'_
+- runs malpem code existing in directory _CDIR_
 
-- iterates over each subdirectory of _'DDIR'_
+- iterates over each subdirectory of _DDIR_
 
-- creates folder names _'Seg_MALPEM'_ in each subdirectory
+- creates folder names _Seg_MALPEM_ in each subdirectory
 
-- runs the code for each nifty file and spits outputs to _'Seg_MALPEM'_ in each corresponding subdirectory
+- runs the code for each nifty file and spits outputs to _Seg_MALPEM_ in each corresponding subdirectory
 
 ## Step 4
 
 Creating soft links to MALPEM segmentations --> [symlink_seg.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/symlink_seg.sh)
 
-- creates soft link to the nifty files that has names ending with _'_MALPEM.nii.gz'_ (malpem segmentations) that are in the subdirectories of the _'Seg_MALPEM'_ folder of the corresponding subdirectories of the main directory 'dir'
+- creates soft link to the nifty files that has names ending with _MALPEM.nii.gz_ (malpem segmentations) that are in the subdirectories of the _Seg_MALPEM_ folder of the corresponding subdirectories of the main directory 'dir'
 
 - the links are created in the first depth of each corresponding subdirectory
 
