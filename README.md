@@ -92,7 +92,7 @@ Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations 
 
 Creating soft links to MALPEM segmentations --> [symlink_seg.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/symlink_seg.sh)
 
-- creates soft link to the nifty files that has names ending with _MALPEM.nii.gz_ (malpem segmentations) that are in the subdirectories of the _Seg_MALPEM_ folder of the corresponding subdirectories of the main directory 'dir'
+- creates soft link to the nifty files that has names ending with _MALPEM.nii.gz_ (malpem segmentations) that are in the subdirectories of the _Seg_MALPEM_ folder of the corresponding subdirectories of the main directory _dir_
 
 - the links are created in the first depth of each corresponding subdirectory
 
