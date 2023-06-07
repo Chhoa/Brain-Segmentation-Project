@@ -13,7 +13,7 @@ Creating batches --> [batch_mod.sh](https://github.com/Chhoa/Brain-Segmentation-
 
 - copies directories from _'sdir'_ in batches and creates batch directories inside _'tdir'_ to put them in
 
-- also leaves the old copied directories in _'tdir'_ untouched when ran again
+- also leaves the old copied directories in '_tdir_' untouched when ran again
 
 ```
 sdir/
