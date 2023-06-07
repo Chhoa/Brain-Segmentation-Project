@@ -7,7 +7,7 @@ This repo is linked to /project/mang/chhoa/scripts on UH Sabine cluster.
 Steps and short descriptions to using the scripts are as follows:
 
 
-### Step 1 ^.^
+## Step 1 ^.^
 
 Creating batches --> [batch_mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/batch_mod.sh)
 
@@ -70,7 +70,7 @@ ddir/
    
   
 
-### Step 2 ^.^
+## Step 2 ^.^
 
 Creating soft links to original nifty files --> [symlink_orig.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/symlink_orig.sh)
 
@@ -82,7 +82,7 @@ Creating soft links to original nifty files --> [symlink_orig.sh](https://github
 
 -doesn't create link for file that would overwrite the existing one (i.e, same name because of same subdirectory and same date)
 
-### Step 3 ^.^
+## Step 3 ^.^
 
 Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations --> [run-malpem-all-mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/run-malpem-all-mod.sh)
 
@@ -94,7 +94,7 @@ Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations 
 
 -runs the code for each nifty file and spits outputs to 'Seg_MALPEM' in each corresponding subdirectory
 
-### Step 4 ^.^
+## Step 4 ^.^
 
 Creating soft links to MALPEM segmentations --> [symlink_seg.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/symlink_seg.sh)
 
@@ -104,6 +104,6 @@ Creating soft links to MALPEM segmentations --> [symlink_seg.sh](https://github.
 
 -file names are unchanged
 
-### Step 5 ^.^
+## Step 5 ^.^
 
 Extracting segmentation structures (Left & Right Ventricles) & cleaning them --> .m, .sh 
