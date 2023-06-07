@@ -2,7 +2,7 @@
 
 This repo is linked to /project/mang/chhoa/scripts on UH Sabine cluster.
 
-**Purpose:** Segmenting brain structures and cleaning them (data preprocessing)
+### Purpose: Segmenting brain structures and cleaning them (data preprocessing)
 
 Steps and short descriptions to using the scripts are as follows:
 
