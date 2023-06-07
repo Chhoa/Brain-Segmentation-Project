@@ -11,9 +11,9 @@ Steps and short descriptions to using the scripts are as follows:
 
 Creating batches --> [batch_mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/batch_mod.sh)
 
--copies directories from 'sdir' in batches and creates batch directories inside 'tdir' to put them in
+- copies directories from 'sdir' in batches and creates batch directories inside 'tdir' to put them in
 
--also leaves the old copied directories in 'tdir' untouched when ran again
+- also leaves the old copied directories in 'tdir' untouched when ran again
 
 ```
 sdir/
