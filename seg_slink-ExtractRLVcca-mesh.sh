@@ -10,9 +10,21 @@
 #SBATCH --mail-type=fail
 #SBATCH -A mang
 
-module load matlab
-dir="/project/mang/data/ADNI_batches/batch_5"
 
+dir="/project/mang/data/ADNI_batches/batch_6"
+
+for d1 in "$dir"/*; do
+  for d2 in "$d1"/*Seg_MALPEM; do
+    for d3 in "$d2"/*; do
+      for file in "$d3"/*_MALPEM.nii.gz; do
+        ln -s "$file" "$d1/"
+      done
+    done
+  done
+done
+
+
+module load matlab
 
 for d1 in "$dir"/*; do
       for file in "$d1"/*_MALPEM.nii.gz; do
