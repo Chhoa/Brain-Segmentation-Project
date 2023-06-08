@@ -103,7 +103,7 @@ Creating soft links to MALPEM segmentations --> [symlink_seg.sh](https://github.
 Extracting segmentation structures (Left & Right Ventricles) & cleaning them --> [segmentExtractRLV_CCA_mod.m](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segmentExtractRLV_CCA_mod.m), [segExtractRLV_ML-mod_sbatch.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segExtractRLV_ML-mod_sbatch.sh) 
 
 - extracts segmentations of right and left ventricles for file names ending with _MALPEM.nii.gz_ in the subdirectories of _dir_ using matlab
-- the segmentations are also cleaned by connected component anlysis using matlab's **bwconncomp** function and files are saved with names starting with _RV_, _LV _ at the beginning 
+- the segmentations are also cleaned by connected component anlysis using matlab's [bwconncomp](https://www.mathworks.com/help/images/ref/bwconncomp.html) function with connectivity 6 and files are saved with names starting with _RV_, _LV _ at the beginning 
 - the batchjob has to be submitted by the command `sbatch segExtractRLV_ML-mod_sbatch.sh`, files are saved in their corresponding input directories
 
 ## Step 6
