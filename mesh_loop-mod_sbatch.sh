@@ -1,5 +1,17 @@
 #!/bin/bash
 
+#!/bin/bash
+#SBATCH -J mesh
+#SBATCH -N 1 -n 1
+#SBATCH --mem=128GB
+#SBATCH --output=/project/mang/chhoa/scripts/log/run-.%x.%j.out
+#SBATCH --error=/project/mang/chhoa/scripts/log/run-.%x.%j.err
+#SBATCH -t 00:05:00
+#SBATCH --mail-user=jchhoa@uh.edu
+#SBATCH --mail-type=end
+#SBATCH --mail-type=fail
+#SBATCH -A mang
+
 module load cmake
 
 cd /project/mang/chhoa/mesh1_ITK/build
