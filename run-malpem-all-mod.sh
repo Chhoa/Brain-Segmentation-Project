@@ -1,7 +1,7 @@
 #!/bin/bash
 ### directory of code
 CDIR=/project/mang/chhoa/code/malpem
-DDIR=/project/mang/data/ADNI_batches/batch_1
+DDIR=/project/mang/data/ADNI_batches/batch_6
 
 ### loop over each subfolder
 for subfolder in ${DDIR}/*
@@ -21,8 +21,6 @@ do
 #SBATCH --error=/project/mang/chhoa/scripts/log/run-.%x.%j.err
 #SBATCH -t 01:00:00
 #SBATCH --mail-user=jchhoa@uh.edu
-#SBATCH --mail-type=begin
-#SBATCH --mail-type=end
 #SBATCH --mail-type=fail
 #SBATCH -A mang
 

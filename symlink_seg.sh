@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="/project/mang/data/ADNI_batches/batch_1"
+dir="/project/mang/data/ADNI_batches/batch_5"
 
 for d1 in "$dir"/*; do
   for d2 in "$d1"/*Seg_MALPEM; do

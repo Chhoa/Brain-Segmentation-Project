@@ -3,7 +3,7 @@
 #SBATCH -N 1 -n 1
 #SBATCH --output=/project/mang/chhoa/scripts/log/run-%j.out
 #SBATCH --error=/project/mang/chhoa/scripts/log/run-%j.err
-#SBATCH -t 00:10:00
+#SBATCH -t 00:05:00
 #SBATCH --mail-user=jchhoa@uh.edu
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=end
@@ -12,9 +12,8 @@
 
 module load matlab
 
-SDIR=/project/mang/chhoa/results/adni-results-test
-DDIR=/project/mang/chhoa/results/test
-FILE=/home/amang/work/chhoa/mesh1_ITK/build/cca_RV_tp01-orig_MALPEM.nii.gz
+DDIR=/project/mang/chhoa/results
+FILE=/project/mang/chhoa/results/067_S_0076_2005-12-06_11_34_31.0_MALPEM.nii.gz
 
-echo matlab -nodisplay -batch "addpath('/project/mang/chhoa/scripts'); segmentExtractRLV_CCA('$FILE', '${DDIR}/'); exit"
-matlab -nodisplay -batch "addpath('/project/mang/chhoa/scripts'); segmentExtractRLV_CCA('$FILE', '${DDIR}/'); exit"
+echo matlab -nodisplay -batch "addpath('/project/mang/chhoa/MLtoolbox/NIfTI_20140122'); segmentExtractRLV_CCA('$FILE', '${DDIR}/'); exit"
+matlab -nodisplay -batch "addpath('/project/mang/chhoa/MLtoolbox/NIfTI_20140122'); segmentExtractRLV_CCA('$FILE', '${DDIR}/'); exit"
