@@ -9,7 +9,7 @@ batch_number=1
 mkdir -p "${tdir}/batch_${batch_number}"
 
 for subfolder in "${sdir}"/*/; do
- cp -r "$subfolder" "${tdir}/batch_${batch_number}"
+ rsync -r "$subfolder" "${tdir}/batch_${batch_number}"
  counter=$((counter + 1))
  if [ $counter -eq $batch_size ]; then
     counter=0
