@@ -13,7 +13,7 @@ for subfolder in "${sdir}"/*/; do
  batch_dir="${tdir}/batch_${batch_number}"
 
  if [ ! -d "${batch_dir}/${subfolder_name}" ]; then
-  rsync -r "$subfolder" "$batch_dir"
+  cp -r "$subfolder" "$batch_dir"
  fi
  
 #cp -r "$subfolder" "${tdir}/batch_${batch_number}"
