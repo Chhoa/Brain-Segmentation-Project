@@ -5,7 +5,7 @@
 #SBATCH --mem=128GB
 #SBATCH --output=run-%x.%j.out
 #SBATCH --error=run-%x.%j.err
-#SBATCH -t 10:00:00
+#SBATCH -t 01:00:00
 #SBATCH --mail-user=jchhoa@uh.edu
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=end
@@ -14,13 +14,13 @@
 
 ### directory of your code
 CDIR=/project/mang/chhoa/code/malpem
-DDIR=/project/mang/data/adni_0/002_S_1070
+DDIR=/project/mang/data/ADNI_batches/batch_6/123_S_0050
 
 #### define paths
-RDIR=/project/mang/chhoa/results/adni-results/002_S_1070
+RDIR=/project/mang/data/ADNI_batches/batch_6/123_S_0050/Seg_MALPEM
 
 #### submitt job
-${CDIR}/bin/malpem-proot -i ${DDIR}/tp05-orig.nii.gz -o ${RDIR} --threads 40
+${CDIR}/bin/malpem-proot -i ${DDIR}/123_S_0050_2005-11-11_13_51_11.0.nii -o ${RDIR} --threads 40
 
 
 

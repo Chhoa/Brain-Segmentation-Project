@@ -1,0 +1,235 @@
+WARNING: Didn't find libGL library in /usr/lib/nvid*, offscreen rendering won't work (only relevant for pdf report)
+Copying file /project/mang/data/ADNI_batches/batch_6/123_S_0050/123_S_0050_2005-11-11_13_51_11.0.nii to input directory:
+cp /project/mang/data/ADNI_batches/batch_6/123_S_0050/123_S_0050_2005-11-11_13_51_11.0.nii /project/mang/chhoa/code/malpem/bin/../lib/care//rootfs/tmp//input//tmp.1avit3ro11/
+
+Command in CARE environment:
+malpem -i /tmp/input/tmp.1avit3ro11/123_S_0050_2005-11-11_13_51_11.0.nii -o /tmp/output/tmp.1avit3ro11/ --threads 40
+
+--------------------------------------
+Input file: /tmp/input/tmp.1avit3ro11/123_S_0050_2005-11-11_13_51_11.0.nii
+Output directory: /tmp/output/tmp.1avit3ro11/
+Field strength: 1.5T
+Max. threads: 40
+Using input mask:  False
+Using input segmentation:  False
+Using transformation to initialise MNI alignment:  False
+Performing initial bias correction: True
+Stopping after brain extraction: False
+Perform another N4 bias correction after the brain extraction: True
+Create a subdirectory for output: True
+Create final pdf report: True
+Will clean up once finished: False
+--------------------------------------
+
+--- STARTED Whole-brain segmentation pipeline (MALPEM) ---
+Creating artificial 'full image mask' to perform bias correction on complete image domain
+--- STARTED getting mask for full image ---
+--- FINISHED getting mask for full image in 0:00:00 ---
+--- STARTED N4 bias correction ---
+--- FINISHED N4 bias correction in 0:05:00 ---
+--- STARTED Registration (rigid) ---
+--- FINISHED Registration (rigid) in 0:00:30 ---
+--- STARTED pincram brain extraction ---
+--- STARTED Registration (rigid) ---
+--- FINISHED Registration (rigid) in 0:00:29 ---
+--- FINISHED pincram brain extraction in 0:12:56 ---
+Transforming image/mask to ensure numerically matching headers (workaround)
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:00 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:03 ---
+Running a second bias correction with the calculated brain mask
+--- STARTED N4 bias correction ---
+--- FINISHED N4 bias correction in 0:02:08 ---
+--- STARTED apply brain mask ---
+--- FINISHED apply brain mask in 0:00:01 ---
+--- STARTED Whole-brain segmentation pipeline (MALPEM) ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:10 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:13 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:14 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:23 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:24 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:26 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:27 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:37 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:38 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:39 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:40 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:43 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:46 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:47 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:49 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:52 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:01:54 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:02:02 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:02:02 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:02:04 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:02:05 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:02:08 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:02:13 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:02:45 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:03:27 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:03:33 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:03:38 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:03:38 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:03:54 ---
+--- STARTED Registration (nonrigid) ---
+--- FINISHED Registration (nonrigid) in 0:04:10 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:03 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:03 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:03 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:05 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:06 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:06 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:06 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:06 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:06 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:06 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:06 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:03 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- STARTED Transformation ---
+--- FINISHED Transformation in 0:00:04 ---
+--- FINISHED Label propagation in 0:04:27 ---
+--- STARTED locally weighted label fusion ---
+--- STARTED Robust intensity rescaling ---
+--- FINISHED Robust intensity rescaling in 0:00:16 ---
+--- FINISHED locally weighted label fusion in 0:04:52 ---
+--- STARTED MALPEM refinement ---
+--- ERROR: File does not exist (/tmp/output/tmp.1avit3ro11/123_S_0050_2005-11-11_13_51_11.0_09-06-23_22-08-08/123_S_0050_2005-11-11_13_51_11.0_MALPEM.nii.gz):  ---
+Moving results to output directory: /project/mang/data/ADNI_batches/batch_6/123_S_0050/Seg_MALPEM
+Cleaning up input directory: /project/mang/chhoa/code/malpem/bin/../lib/care//rootfs/tmp//input//tmp.1avit3ro11

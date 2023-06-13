@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sdir="/project/mang/data/adni_0_test"
-tdir="/project/mang/data/adni_0_batches"
+sdir="/project/mang/data/ADNI"
+tdir="/project/mang/data/ADNI_batches"
 batch_size=10
 counter=0
 batch_number=1

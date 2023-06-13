@@ -4,7 +4,7 @@
 #SBATCH --mem=256GB
 #SBATCH --output=/project/mang/chhoa/scripts/log/run-.%x.%j.out
 #SBATCH --error=/project/mang/chhoa/scripts/log/run-.%x.%j.err
-#SBATCH -t 07:00:00
+#SBATCH -t 03:00:00
 #SBATCH --mail-user=jchhoa@uh.edu
 #SBATCH --mail-type=end
 #SBATCH --mail-type=fail

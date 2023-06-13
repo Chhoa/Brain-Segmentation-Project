@@ -2,7 +2,7 @@
 
 sdir="/project/mang/data/adni_0"
 tdir="/project/mang/data/adni_0_batches"
-batch_size=10
+batch_size=4
 counter=0
 batch_number=1
 
