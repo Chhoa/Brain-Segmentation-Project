@@ -9,60 +9,18 @@ Steps and short descriptions to using the scripts are as follows:
 
 ## Step 1
 
-Creating batches --> [batch_mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/batch_mod.sh)
+~~Creating batches --> [batch_mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/batch_mod.sh)~~
 
-- copies directories from _sdir_ in batches and creates batch directories inside _tdir_ to put them in
+~~- copies directories from _sdir_ in batches and creates batch directories inside _tdir_ to put them in~~
 
-- also leaves the old copied directories in _tdir_ untouched when ran again
+~~- also leaves the old copied directories in _tdir_ untouched when ran again~~
 
-```
-sdir/
+**Setup:** Two directories, one with the data and another including both data and results.
 
-|--dir1/
+Syncing new data from the former(data) directory to the latter(data+results): 
 
-|--dir2/
+`rsync -vr /project/mang/data/ADNI/. /project/mang/data/ADNI_results/.`
 
-.
-
-.
-
-.
-
-.
-```
-
-```
-
-ddir/
-
-|--batch_1/
-  
-|  |--dir1/
-  
-|  |--dir2/
-  
-|   .
-   
-|   .
-   
-|   .
-  
-  
-| .
- 
-| .
- 
-| .
- 
- |--batch_100/
- 
- |  .
-   
- |  .
-   
- |  . 
- 
- ``` 
 
 ## Step 2 
 
