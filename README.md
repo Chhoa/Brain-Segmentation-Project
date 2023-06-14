@@ -19,7 +19,7 @@ Steps and short descriptions to using the scripts are as follows:
 
 Syncing new data from the former(data) directory to the latter(data+results): 
 
-`rsync -vr /project/mang/data/ADNI/. /project/mang/data/ADNI_results/.`
+`rsync -vr /project/mang/data/ADNI/. /project/mang/data/ADNI_data+results/.`
 
 
 ## Step 2 
