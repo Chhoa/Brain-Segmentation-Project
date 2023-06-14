@@ -38,15 +38,19 @@ ${\color{lightblue}Warning:}$ ***Moving the directories around after symlinking 
 
 ## Step 3
 
-Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations --> [run-malpem-all-mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/run-malpem-all-mod.sh)
+Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations --> [run-malpem-all-sync.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/run-malpem-all-sync.sh)
 
 - runs malpem code existing in directory _CDIR_
 
-- iterates over each subdirectory of _DDIR_
+- iterates over each(/specified) subdirectory of _DDIR_
 
-- creates folder names _Seg_MALPEM_ in each subdirectory
+- creates folder names _Seg_MALPEM_ in each subdirectory if it doesn't exist
 
-- runs the code for each nifty file and spits outputs to _Seg_MALPEM_ in each corresponding subdirectory
+- looks for the nifty files that weren't run before with MALPEM (i.e., checks if their results already exist in the corresponding _Seg_MALPEM_ directory)[^\*]
+
+- runs the code for those nifty files only and spits outputs to _Seg_MALPEM_ in each corresponding subdirectory
+
+[^\*]: bbb
 
 ## Step 4
 
