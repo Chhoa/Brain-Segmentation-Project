@@ -1,9 +1,9 @@
 #!/bin/bash
 
 CDIR=/project/mang/chhoa/code/malpem
-DDIR=/project/mang/data/ADNI_013batch013_S_1035
+DDIR=/project/mang/data/ADNI_013batch
 
-for subfolder in ${DDIR}/*; do
+for subfolder in ${DDIR}/013_S_10*; do
 mkdir -p "${subfolder}/Seg_MALPEM"
 
  for file in ${subfolder}/*.nii; do
@@ -21,7 +21,6 @@ mkdir -p "${subfolder}/Seg_MALPEM"
 
 ### submit the job
 sbatch <<EOF
-
 #!/bin/bash
 #SBATCH -J malpem
 #SBATCH -N 1 -n 40
@@ -36,7 +35,6 @@ sbatch <<EOF
 ### run the malpem-proot command
 ${CDIR}/bin/malpem-proot -i ${file} -o ${subfolder}/Seg_MALPEM --threads 40
 #echo "$file"
-
 EOF
 
   fi

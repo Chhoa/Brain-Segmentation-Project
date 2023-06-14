@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="/project/mang/data/ADNI_014results"
+dir="/project/mang/data/ADNI_data+results"
 
 for d1 in "$dir"/*; do
   for d2 in "$d1"/M*; do

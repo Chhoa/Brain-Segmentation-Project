@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #DIR=/project/mang/chhoa/code/malpem
-DDIR=/project/mang/data/ADNI_013batch013_S_1035
+DDIR=/project/mang/data/ADNI_013batch
 
-for subfolder in ${DDIR}/*; do
+for subfolder in ${DDIR}/013_S_10*; do
 mkdir -p "${subfolder}/Seg_MALPEM" 
  for file in ${subfolder}/*.nii; do
  fname=$(basename "$file" .0.nii)
