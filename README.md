@@ -34,7 +34,7 @@ Creating soft links to original nifty files --> [symlink_orig.sh](https://github
 
 - doesn't create link for file that would overwrite the existing one (i.e, same name because of same subdirectory and same date)
 
-{\color{lightblue}Warning:} ***moving the directories around after symlinking would mess up the links.***
+${\color{lightblue}Warning:}$ ***moving the directories around after symlinking would mess up the links.***
 
 ## Step 3
 
