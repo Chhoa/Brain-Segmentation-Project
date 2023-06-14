@@ -46,11 +46,10 @@ Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations 
 
 - creates folder names _Seg_MALPEM_ in each subdirectory if it doesn't exist
 
-- looks for the nifty files that weren't run before with MALPEM (i.e., checks if their results already exist in the corresponding _Seg_MALPEM_ directory)[^\*]
+- looks for the nifty files that weren't run before with MALPEM (i.e., checks if their results already exist in the corresponding _Seg_MALPEM_ directory)
 
-- runs the code for those nifty files only and spits outputs to _Seg_MALPEM_ in each corresponding subdirectory
+- runs the code for those nifty files only and spits outputs to _Seg_MALPEM_ in each corresponding subdirectory (MALPEM writes its outputs by creating a subfolder named after the original file with time and date at the end)
 
-[^\*]: bbb
 
 ## Step 4
 
