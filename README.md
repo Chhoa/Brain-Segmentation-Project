@@ -34,6 +34,8 @@ Creating soft links to original nifty files --> [symlink_orig.sh](https://github
 
 - doesn't create link for file that would overwrite the existing one (i.e, same name because of same subdirectory and same date)
 
+$${\color{red}Warning:$$
+
 ## Step 3
 
 Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations --> [run-malpem-all-mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/run-malpem-all-mod.sh)
