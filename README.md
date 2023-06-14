@@ -34,7 +34,7 @@ Creating soft links to original nifty files --> [symlink_orig.sh](https://github
 
 - doesn't create link for file that would overwrite the existing one (i.e, same name because of same subdirectory and same date)
 
-${\color{lightblue}Warning:}$ ***moving the directories around after symlinking would mess up the links.***
+${\color{lightblue}Warning:}$ ***Moving the directories around after symlinking would mess up the links.***
 
 ## Step 3
 
@@ -57,6 +57,8 @@ Creating soft links to MALPEM segmentations --> [symlink_seg.sh](https://github.
 - the links are created in the first depth of each corresponding subdirectory
 
 - file names are unchanged
+
+${\color{lightblue}Warning:}$ ***Moving the directories around after symlinking would mess up the links.***
 
 ## Step 5
 
