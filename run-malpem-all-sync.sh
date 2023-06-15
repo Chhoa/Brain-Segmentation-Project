@@ -1,9 +1,9 @@
 #!/bin/bash
 
 CDIR=/project/mang/chhoa/code/malpem
-DDIR=/project/mang/data/ADNI_013batch
+DDIR=/project/mang/data/ADNI_data+results
 
-for subfolder in ${DDIR}/013_S_10*; do
+for subfolder in ${DDIR}/05*; do
 mkdir -p "${subfolder}/Seg_MALPEM"
 
  for file in ${subfolder}/*.nii; do
