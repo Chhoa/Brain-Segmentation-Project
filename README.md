@@ -48,7 +48,7 @@ Running [MALPEM](https://github.com/ledigchr/MALPEM) software for segmentations 
 
 - looks for the nifty files that weren't run before with MALPEM (i.e., checks if their results already exist in the corresponding _Seg_MALPEM_ directory)
 
-- runs the code for those nifty files only and spits outputs to _Seg_MALPEM_ in each corresponding subdirectory (MALPEM writes its outputs by creating a subfolder named after the original file with time and date at the end)
+- runs the code for those nifty files only and spits outputs to _Seg_MALPEM_ in each corresponding subdirectory (MALPEM writes its outputs by creating a subfolder named after the original file with time and date when the segmentations were created)
 
 
 ## Step 4
