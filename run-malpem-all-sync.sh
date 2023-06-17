@@ -3,7 +3,7 @@
 CDIR=/project/mang/chhoa/code/malpem
 DDIR=/project/mang/data/ADNI_data+results
 
-for subfolder in ${DDIR}/05*; do
+for subfolder in ${DDIR}/94*; do
 mkdir -p "${subfolder}/Seg_MALPEM"
 
  for file in ${subfolder}/*.nii; do
