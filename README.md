@@ -81,5 +81,5 @@ Renaming the cleaned segmentation files and meshing them via ITK --> [mesh_loop-
 
 ## Step 5+6 
 
-Can skip step 5 and 6 --> [seg_slink-ExtractRLVcca-mesh.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/seg_slink-ExtractRLVcca-mesh.sh)
-- combination of step 5 and 6, the batchjob has to be submitted by the command `sbatch seg_slink-ExtractRLVcca-mesh.sh`
+Can skip step 4, 5 and 6 --> [seg_slink-ExtractRLVcca-mesh.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/seg_slink-ExtractRLVcca-mesh.sh)
+- combination of step 4, 5 and 6, the batchjob has to be submitted by the command `sbatch seg_slink-ExtractRLVcca-mesh.sh`
