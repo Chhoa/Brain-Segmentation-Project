@@ -79,7 +79,7 @@ Renaming the cleaned segmentation files and meshing them via ITK --> [mesh_loop-
 - meshes the above files using ITK libraries and saves them as _.vtk_ files with names ending with _mesh_
 - the batchjob has to be submitted by the command `sbatch mesh_loop-mod_sbatch.sh`, files are saved in their corresponding input directories
 
-## Step 5+6 
+## Step 4+5+6 
 
 Can skip step 4, 5 and 6 --> [seg_slink-ExtractRLVcca-mesh.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/seg_slink-ExtractRLVcca-mesh.sh)
 - combination of step 4, 5 and 6, the batchjob has to be submitted by the command `sbatch seg_slink-ExtractRLVcca-mesh.sh`
