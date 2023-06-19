@@ -28,8 +28,12 @@ module load matlab
 
 for d1 in "$dir"/*; do
       for file in "$d1"/*_MALPEM.nii.gz; do
+      fname=$(basename "$file" .nii.gz)
+      vname=LV_$fname-cca.nii.gz
+      if [ ! -f $d1/$vname ]; then
       matlab -nodisplay -batch "addpath('/project/mang/chhoa/MLtoolbox/NIfTI_20140122'); segmentExtractRLV_CCA_mod('$file', '$d1'); exit"
-    done
+fi    
+done
 done
 
 
@@ -37,12 +41,21 @@ module load cmake
 cd /project/mang/chhoa/mesh1_ITK/build
 
 for d1 in "$dir"/*; do
-    for file in "$d1"/[RL]V_*; do
-    filename1=$(basename "$file" .nii.gz)
-    nfile="${filename1}-cca.nii.gz"
+for file in "$d1"/[RL]V_*_MALPEM.nii.gz; do
+
+    fname=$(basename "$file" .nii.gz)
+    vname=$fname-cca.nii.gz
+
+    if [ ! -f $d1/$vname ]; then
+
+    #filename1=$(basename "$file" .nii.gz)
+    nfile="${fname}-cca.nii.gz"
     mv $file "$d1/$nfile"
+
     filename2=$(basename "$d1/$nfile" .nii.gz)
     outputfile="${filename2}_mesh.vtk"
     ./mesh_ITK "$d1/$nfile" "$d1/$outputfile"
-  done
+
+fi  
+done
 done
