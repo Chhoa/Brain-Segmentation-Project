@@ -1,10 +1,10 @@
 #!/bin/bash
 
 module load matlab
-dir="/project/mang/data/test011_S_0861"
+dir="/project/mang/data/ADNI_data+results"
 
-for d1 in "$dir"/*; do
-      for file in "$d1"/*_MALPEM.nii.gz; do
+for d1 in "$dir"/029*; do
+      for file in "$d1"/0*_MALPEM.nii.gz; do
       fname=$(basename "$file" .nii.gz)
       vname=LV_$fname-cca.nii.gz
       if [ ! -f $d1/$vname ]; then
