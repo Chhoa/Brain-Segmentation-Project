@@ -3,7 +3,7 @@
 #!/bin/bash
 #SBATCH -J mesh
 #SBATCH -N 1 -n 1
-#SBATCH --mem=5GB
+#SBATCH --mem=2GB
 #SBATCH --output=/project/mang/chhoa/scripts/log/run-.%x.%j.out
 #SBATCH --error=/project/mang/chhoa/scripts/log/run-.%x.%j.err
 #SBATCH -t 01:00:00
