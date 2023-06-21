@@ -65,9 +65,7 @@ ${\color{lightblue}Warning:}$ ***Moving the directories around after symlinking 
 
 ## Step 5
 
-Extracting segmentation structures (Left & Right Ventricles) & cleaning them --> 
-
-[segmentExtractRLV_CCA_mod.m](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segmentExtractRLV_CCA_mod.m), [segExtractRLV_ML-mod_sbatch.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segExtractRLV_ML-mod_sbatch.sh) 
+Extracting segmentation structures (Left & Right Ventricles) & cleaning them --> <br>[segmentExtractRLV_CCA_mod.m](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segmentExtractRLV_CCA_mod.m), [segExtractRLV_ML-mod_sbatch.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segExtractRLV_ML-mod_sbatch.sh) 
 
 - checks if left and right ventricles were segmented before by name matching 
 - if not, then extracts segmentations of right and left ventricles for file names ending with _MALPEM.nii.gz_ in the subdirectories of _dir_ using matlab
@@ -81,9 +79,7 @@ Renaming the cleaned segmentation files and meshing them via ITK --> ~~[mesh_loo
  
 - adds _-cca_ at the end of the file names starting with _RV_ and _LV_ and ending with _MALPEM.nii.gz_ in the subdirectories of _dir_ if it hasn't been done before
 - meshes the above files using ITK libraries and saves them as _.vtk_ files with names ending with _mesh_
-- ~~the batchjob has to be submitted by the command `sbatch mesh_loop-mod_sbatch.sh`~~
-
-  no need to submit batchjob since it takes very little time to perform this task, just run the script straight
+- ~~the batchjob has to be submitted by the command `sbatch mesh_loop-mod_sbatch.sh`~~<br>no need to submit batchjob since it takes very little time to perform this task, just run the script straight
 - files are saved in their corresponding input directories
 
 ## Step 4+5+6 
