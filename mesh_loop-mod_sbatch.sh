@@ -3,10 +3,10 @@
 #!/bin/bash
 #SBATCH -J mesh
 #SBATCH -N 1 -n 1
-#SBATCH --mem=4GB
+#SBATCH --mem=5GB
 #SBATCH --output=/project/mang/chhoa/scripts/log/run-.%x.%j.out
 #SBATCH --error=/project/mang/chhoa/scripts/log/run-.%x.%j.err
-#SBATCH -t 00:10:00
+#SBATCH -t 01:00:00
 #SBATCH --mail-user=jchhoa@uh.edu
 #SBATCH --mail-type=end
 #SBATCH --mail-type=fail
@@ -17,25 +17,18 @@ module load cmake
 cd /project/mang/chhoa/mesh1_ITK/build
 dir="/project/mang/data/ADNI_data+results"
 
-for d1 in "$dir"/9*; do
+for d1 in "$dir"/0*; do
     for file in "$d1"/[RL]V_*_MALPEM.nii.gz; do
     #for file in "$d1"/{cca*,binary*}; do
 
-    fname=$(basename "$file" .nii.gz)
-    vname=$fname-cca.nii.gz
-
-    if [ ! -f $d1/$vname ]; then
-
-    #echo $file
-    #filename1=$(basename "$file" .nii.gz)
-    nfile="${fname}-cca.nii.gz"
+    filename1=$(basename "$file" .nii.gz)
+    nfile="${filename1}-cca.nii.gz"
     mv $file "$d1/$nfile"
 
     filename2=$(basename "$d1/$nfile" .nii.gz)
     outputfile="${filename2}_mesh.vtk"
     ./mesh_ITK "$d1/$nfile" "$d1/$outputfile"
   
-  fi
   done
 done
 
