@@ -77,9 +77,7 @@ Extracting segmentation structures (Left & Right Ventricles) & cleaning them -->
 
 ## Step 6
 
-Renaming the cleaned segmentation files and meshing them via ITK --> ~~[mesh_loop-mod_sbatch.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/mesh_loop-mod_sbatch.sh)~~ 
-
-[mesh_loop-mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/mesh_loop-mod.sh), source code: [mesh3d.cpp](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/mesh3d.cpp)
+Renaming the cleaned segmentation files and meshing them via ITK --> ~~[mesh_loop-mod_sbatch.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/mesh_loop-mod_sbatch.sh)~~ <br>[mesh_loop-mod.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/mesh_loop-mod.sh), source code: [mesh3d.cpp](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/mesh3d.cpp)
  
 - adds _-cca_ at the end of the file names starting with _RV_ and _LV_ and ending with _MALPEM.nii.gz_ in the subdirectories of _dir_ if it hasn't been done before
 - meshes the above files using ITK libraries and saves them as _.vtk_ files with names ending with _mesh_
