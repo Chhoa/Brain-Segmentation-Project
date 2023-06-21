@@ -65,7 +65,9 @@ ${\color{lightblue}Warning:}$ ***Moving the directories around after symlinking 
 
 ## Step 5
 
-Extracting segmentation structures (Left & Right Ventricles) & cleaning them --> [segmentExtractRLV_CCA_mod.m](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segmentExtractRLV_CCA_mod.m), [segExtractRLV_ML-mod_sbatch.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segExtractRLV_ML-mod_sbatch.sh) 
+Extracting segmentation structures (Left & Right Ventricles) & cleaning them --> 
+
+[segmentExtractRLV_CCA_mod.m](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segmentExtractRLV_CCA_mod.m), [segExtractRLV_ML-mod_sbatch.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segExtractRLV_ML-mod_sbatch.sh) 
 
 - checks if left and right ventricles were segmented before by name matching 
 - if not, then extracts segmentations of right and left ventricles for file names ending with _MALPEM.nii.gz_ in the subdirectories of _dir_ using matlab
