@@ -71,7 +71,7 @@ Extracting segmentation structures (Left & Right Ventricles) & cleaning them -->
 - if not, then extracts segmentations of right and left ventricles for file names ending with _MALPEM.nii.gz_ in the subdirectories of _dir_ using matlab
 - the segmentations are also cleaned by connected component anlysis using matlab's [bwconncomp](https://www.mathworks.com/help/images/ref/bwconncomp.html) function with connectivity 6 and files are saved with names starting with _RV_, _LV _ at the beginning 
 - the batchjob has to be submitted by the command `sbatch segExtractRLV_ML-mod_sbatch.sh`, files are saved in their corresponding input directories
-- it takes less than a minute per 2 tasks
+- it takes less than a minute per 2 tasks and 2~3 GB memory (RAM) is enough for this job
 
 ## Step 6
 
@@ -79,7 +79,8 @@ Renaming the cleaned segmentation files and meshing them via ITK --> ~~[mesh_loo
  
 - adds _-cca_ at the end of the file names starting with _RV_ and _LV_ and ending with _MALPEM.nii.gz_ in the subdirectories of _dir_ if it hasn't been done before
 - meshes the above files using ITK libraries and saves them as _.vtk_ files with names ending with _mesh_
-- ~~the batchjob has to be submitted by the command `sbatch mesh_loop-mod_sbatch.sh`~~ no need to submit batchjob since it takes very less time to perform this taks, files are saved in their corresponding input directories
+- ~~the batchjob has to be submitted by the command `sbatch mesh_loop-mod_sbatch.sh`~~ no need to submit batchjob since it takes very little time to perform this task, just run the script straight
+- files are saved in their corresponding input directories
 
 ## Step 4+5+6 
 
