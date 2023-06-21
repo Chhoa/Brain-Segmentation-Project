@@ -3,9 +3,9 @@
 module load cmake
 
 cd /project/mang/chhoa/mesh1_ITK/build
-dir="/project/mang/data/test011_S_0861"
+dir="/project/mang/data/ADNI_data+results"
 
-for d1 in "$dir"/*; do
+for d1 in "$dir"/027_S_085*; do
     for file in "$d1"/[RL]V_*_MALPEM.nii.gz; do
     #for file in "$d1"/{cca*,binary*}; do
 

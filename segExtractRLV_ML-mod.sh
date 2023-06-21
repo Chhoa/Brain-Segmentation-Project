@@ -3,7 +3,7 @@
 module load matlab
 dir="/project/mang/data/ADNI_data+results"
 
-for d1 in "$dir"/029*; do
+for d1 in "$dir"/027_S_085*; do
       for file in "$d1"/0*_MALPEM.nii.gz; do
       fname=$(basename "$file" .nii.gz)
       vname=LV_$fname-cca.nii.gz
