@@ -67,10 +67,14 @@ ${\color{lightblue}Warning:}$ ***Moving the directories around after symlinking 
 
 Extracting segmentation structures (Left & Right Ventricles) & cleaning them --> <br>[segmentExtractRLV_CCA_mod.m](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segmentExtractRLV_CCA_mod.m), [segExtractRLV_ML-mod_sbatch.sh](https://github.com/Chhoa/Brain-Segmentation-Project/blob/main/segExtractRLV_ML-mod_sbatch.sh) 
 
-- checks if left and right ventricles were segmented before by name matching 
+- checks if left and right ventricles were segmented before by name matching
+ 
 - if not, then extracts segmentations of right and left ventricles for file names ending with _MALPEM.nii.gz_ in the subdirectories of _dir_ using matlab
-- the segmentations are also cleaned by connected component anlysis using matlab's [bwconncomp](https://www.mathworks.com/help/images/ref/bwconncomp.html) function with connectivity 6 and files are saved with names starting with _RV_, _LV _ at the beginning 
+  
+- the segmentations are also cleaned by connected component anlysis using matlab's [bwconncomp](https://www.mathworks.com/help/images/ref/bwconncomp.html) function with connectivity 6 and files are saved with names starting with _RV_, _LV _ at the beginning
+  
 - the batchjob has to be submitted by the command `sbatch segExtractRLV_ML-mod_sbatch.sh`, files are saved in their corresponding input directories
+  
 - it takes less than a minute per 2 tasks and 2~3 GB memory (RAM) is enough for this job
 
 ## Step 6
