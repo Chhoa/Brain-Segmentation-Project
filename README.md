@@ -15,7 +15,7 @@ Steps and short descriptions to using the scripts are as follows:
 
 ~~- also leaves the old copied directories in _tdir_ untouched when ran again~~
 
-**Setup:** Two directories, one(_ADNI_) with the data and another including both data and results.
+**Setup:** Two directories, one(_ADNI_) with the data and another(_ADNI\_data+results_) including both data and results.
 
 Syncing new data from the former(data) directory to the latter(data+results): 
 
